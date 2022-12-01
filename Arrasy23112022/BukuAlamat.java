@@ -10,44 +10,59 @@ package Arrasy23112022;
  * @author USER
  */
 public class BukuAlamat {
+    
     private String nama;
     private String alamat;
-    private String notelp;
+    private String telp;
     private String email;
     
     public BukuAlamat(){
-    
+        
     }
     
-    public String getNama() {
+    public BukuAlamat(String nama,String alamat,String telp,String email){
+        this.nama=nama;
+        this.alamat=alamat;
+        this.telp=telp;
+        this.email=email;
+    }
+    
+    public void setNama(String nama){
+        this.nama=nama;
+    }
+    
+    public void setAlamat(String alamat){
+        this.alamat=alamat;
+    }
+    
+    public void setTelp(String telp){
+        this.telp=telp;
+    }
+    
+    public void setEmail(String email){
+        this.email=email;
+    }
+    
+    public String getNama(){
         return nama;
-    }
-    
-     public void setNama(String nama){
-        this.nama = nama;
     }
     
     public String getAlamat(){
         return alamat;
     }
     
-    public void setAlamat(String alamat){
-        this.alamat = alamat;
-    }
-    
-    public String getNotelp(){
-        return notelp;
-    }
-    
-    public void setNotelp(String notelp){
-        this.notelp = notelp;
+    public String getTelp(){
+        return telp;
     }
     
     public String getEmail(){
         return email;
     }
     
-    public void setEmail(String email){
-        this.email=email;
+    public void print(String nama,String alamat,String telp,String email){
+        System.out.println("Nama : "+nama);
+        System.out.println("Almat : "+alamat);
+        System.out.println("Nomor Telepon : "+telp);
+        System.out.println("Email : "+email);
     }
 }
